@@ -2,7 +2,6 @@ import { setup } from "xstate";
 import { Context, EventNames, Events, Guards, MachineStates } from "./types";
 
 export const machine = setup({
-  // SAFETY: This is the recommended practice in the xstate docs
   types: {} as {
     context: Context;
     events: Events;
